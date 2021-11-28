@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "4a4f02d4cf1fc39f64bf",
+    "revision": "483207613902c91974d1",
     "url": "/css/app.f26128e4.css"
   },
   {
-    "revision": "4a4f02d4cf1fc39f64bf",
+    "revision": "483207613902c91974d1",
     "url": "/css/app.f26128e4.css.map"
   },
   {
@@ -32,11 +32,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/dashboard~invoice.96a655cf.css.map"
   },
   {
-    "revision": "6afb7dd26c6d16b1f5e9",
+    "revision": "8bd4d5ffda9b51d13f2e",
     "url": "/css/invoice.857fc4d1.css"
   },
   {
-    "revision": "6afb7dd26c6d16b1f5e9",
+    "revision": "8bd4d5ffda9b51d13f2e",
     "url": "/css/invoice.857fc4d1.css.map"
   },
   {
@@ -88,16 +88,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "c9542d6b1c0ae3bf4db6d640999d8596",
+    "revision": "b8221d9f0f211c38751c39e0f8b46f70",
     "url": "/index.html"
   },
   {
-    "revision": "4a4f02d4cf1fc39f64bf",
-    "url": "/js/app.903aaa34.js"
+    "revision": "483207613902c91974d1",
+    "url": "/js/app.2c412b97.js"
   },
   {
-    "revision": "4a4f02d4cf1fc39f64bf",
-    "url": "/js/app.903aaa34.js.map"
+    "revision": "483207613902c91974d1",
+    "url": "/js/app.2c412b97.js.map"
   },
   {
     "revision": "d1831d148c2be08c1eae",
@@ -108,12 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-vendors.69119ad1.js.map"
   },
   {
-    "revision": "92ccf5669b68792cc2dc",
-    "url": "/js/dashboard.d0805196.js"
+    "revision": "a106f65d5009b320f8e4",
+    "url": "/js/dashboard.ae8fdca1.js"
   },
   {
-    "revision": "92ccf5669b68792cc2dc",
-    "url": "/js/dashboard.d0805196.js.map"
+    "revision": "a106f65d5009b320f8e4",
+    "url": "/js/dashboard.ae8fdca1.js.map"
   },
   {
     "revision": "3fa09b9ca5ebe4ea4d86",
@@ -140,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/dashboard~invoice~invoices.0b5b5bdc.js.map"
   },
   {
-    "revision": "6afb7dd26c6d16b1f5e9",
-    "url": "/js/invoice.16ef59bb.js"
+    "revision": "8bd4d5ffda9b51d13f2e",
+    "url": "/js/invoice.0141c0b5.js"
   },
   {
-    "revision": "6afb7dd26c6d16b1f5e9",
-    "url": "/js/invoice.16ef59bb.js.map"
+    "revision": "8bd4d5ffda9b51d13f2e",
+    "url": "/js/invoice.0141c0b5.js.map"
   },
   {
     "revision": "27fd7bf9fa9794fefc00",
@@ -328,7 +328,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/invoice-rows-header.json"
   },
   {
-    "revision": "f72e45d3a2b1fad11c72afd6a3671067",
+    "revision": "25c0cd07ffb3ce4dbeecf02f9d05e80d",
     "url": "/locales/en/invoice-terms-and-conditions.json"
   },
   {
@@ -352,7 +352,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/team-fields.json"
   },
   {
-    "revision": "3d25f05c05845c1b170bbbb116a4fd2b",
+    "revision": "e753307f4ba476ccb364d9838a72d2f9",
     "url": "/locales/en/team-form.json"
   },
   {
