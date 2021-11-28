@@ -6,4 +6,7 @@ export default {
   // base_url: `${window.location.origin}${process.env.BASE_URL}`
   // api_url: wordpress.api_url,
   // api_nonce: wordpress.nonce,
+  invoice: {
+    showLogo: false,
+  },
 };

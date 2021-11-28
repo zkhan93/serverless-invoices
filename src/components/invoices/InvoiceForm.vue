@@ -3,16 +3,18 @@
         <div class="col-12 scrollbar invoice-container">
             <div class="card bg-base dp--02 invoice-box" v-if="invoice">
                 <div class="card-body">
+                    <div class="row mb-5" v-if="showLogo">
+                        <TeamLogo class="col-12 text-center" :errors="errors"/>
+                    </div>
                     <div class="row mb-5">
-                        <TeamLogo class="col-4" :errors="errors"/>
-                        <InvoiceHeader :invoice="invoice" :errors="errors" @update="updateProp"
-                                       class="col-8 text-right mb-2"/>
+                      <InvoiceCompanyDetails :invoice="invoice" :errors="errors" @update="updateProp"
+                                               class="col-12 text-center mb-2"/>
                     </div>
                     <div class="row">
                         <InvoiceClientDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                               class="col-6"/>
-                        <InvoiceCompanyDetails :invoice="invoice" :errors="errors" @update="updateProp"
-                                               class="col-6 text-right"/>
+                        <InvoiceHeader :invoice="invoice" :errors="errors" @update="updateProp"
+                                       class="col-6 text-right"/>
                     </div>
                     <div class="row mt-3">
                         <AppEditable :value="invoice.notes"
@@ -21,7 +23,7 @@
                                      @change="updateProp({ notes: $event })"/>
                     </div>
                     <div class="row">
-                        <table class="table" :class="{'invoice__rows--compact': invoice.is_compact}">
+                        <table class="table" :class="{'invoice__rows--compact': invoice.is_compact}" style="width:100%">
                             <InvoiceRowsHeader :invoice="invoice"/>
                             <tbody>
                             <InvoiceRow v-for="(row, index) in invoice.rows" :errors="errors"
@@ -44,6 +46,7 @@
     </div>
 </template>
 <script>
+import config from '@/config/app.config';
 import { mapGetters, mapState } from 'vuex';
 import InvoiceRow from '@/components/invoices/InvoiceRow';
 import InvoiceClientDetails from '@/components/invoices/InvoiceClientDetails';
@@ -79,6 +82,9 @@ export default {
     ...mapGetters({
       invoice: 'invoices/invoice',
     }),
+    showLogo() {
+      return config.invoice.showLogo;
+    },
   },
   watch: {
     '$route.params.id'() {
