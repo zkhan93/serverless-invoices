@@ -8,12 +8,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "483207613902c91974d1",
-    "url": "/css/app.f26128e4.css"
+    "revision": "9a73a5134ee5639bc2f3",
+    "url": "/css/app.da0c04ae.css"
   },
   {
-    "revision": "483207613902c91974d1",
-    "url": "/css/app.f26128e4.css.map"
+    "revision": "9a73a5134ee5639bc2f3",
+    "url": "/css/app.da0c04ae.css.map"
   },
   {
     "revision": "d1831d148c2be08c1eae",
@@ -32,11 +32,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/dashboard~invoice.96a655cf.css.map"
   },
   {
-    "revision": "8bd4d5ffda9b51d13f2e",
+    "revision": "9ca6c2d29307257ec53f",
     "url": "/css/invoice.857fc4d1.css"
   },
   {
-    "revision": "8bd4d5ffda9b51d13f2e",
+    "revision": "9ca6c2d29307257ec53f",
     "url": "/css/invoice.857fc4d1.css.map"
   },
   {
@@ -88,16 +88,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "b8221d9f0f211c38751c39e0f8b46f70",
+    "revision": "97d79ca2e7532d88ec9c8f31e08b0ad2",
     "url": "/index.html"
   },
   {
-    "revision": "483207613902c91974d1",
-    "url": "/js/app.2c412b97.js"
+    "revision": "9a73a5134ee5639bc2f3",
+    "url": "/js/app.9da9d4ac.js"
   },
   {
-    "revision": "483207613902c91974d1",
-    "url": "/js/app.2c412b97.js.map"
+    "revision": "9a73a5134ee5639bc2f3",
+    "url": "/js/app.9da9d4ac.js.map"
   },
   {
     "revision": "d1831d148c2be08c1eae",
@@ -140,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/dashboard~invoice~invoices.0b5b5bdc.js.map"
   },
   {
-    "revision": "8bd4d5ffda9b51d13f2e",
-    "url": "/js/invoice.0141c0b5.js"
+    "revision": "9ca6c2d29307257ec53f",
+    "url": "/js/invoice.4f44de91.js"
   },
   {
-    "revision": "8bd4d5ffda9b51d13f2e",
-    "url": "/js/invoice.0141c0b5.js.map"
+    "revision": "9ca6c2d29307257ec53f",
+    "url": "/js/invoice.4f44de91.js.map"
   },
   {
     "revision": "27fd7bf9fa9794fefc00",
@@ -296,7 +296,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/invoice-bank-details.json"
   },
   {
-    "revision": "255fd1103bf29aa2c26466e778365bc8",
+    "revision": "f0fd7da2928551a206bea86f5d65e08d",
     "url": "/locales/en/invoice-client-details.json"
   },
   {
@@ -316,7 +316,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/invoice-form.json"
   },
   {
-    "revision": "ef17641955af9920cb2007d05cc7757a",
+    "revision": "b53ecea0e3b51a84990280befc11ab61",
     "url": "/locales/en/invoice-header.json"
   },
   {
