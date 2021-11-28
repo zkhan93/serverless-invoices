@@ -1,5 +1,6 @@
 <template>
     <div>
+      {{$t('m_s')}}
         <div>
             <ClientSelector :value="invoice.client_name" btn-class="font-weight-bold" @selected="clientSelected"/>
             <i class="material-icons md-18 ml-2 pointer d-print-none" v-if="invoice.client" @click="editClient">edit</i>
