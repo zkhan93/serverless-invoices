@@ -37,6 +37,7 @@
                            :inline="true"
                            field="due_at"/>
         </BModal>
+        <template v-if="late_fee">
         <br>{{ $t('late_fee') }}
         <AppEditable :value="invoice.late_fee | currency"
                      :errors="errors"
@@ -44,9 +45,17 @@
                      field="late_fee"
                      :placeholder="$t('add_late_fee')"
                      @change="updateProp({ late_fee: $event })"/>
+        </template>
+        <br>{{ $t('po') }}
+        <AppEditable :value="invoice.po"
+                     :errors="errors"
+                     field="po"
+                     :placeholder="$t('add_po')"
+                     @change="updateProp({ late_fee: $event })"/>
     </div>
 </template>
 <script>
+import config from '@/config/app.config';
 import { BModal, VBModal } from 'bootstrap-vue';
 import AppEditable from '@/components/form/AppEditable';
 import AppDatePicker from '@/components/form/AppDatePicker';
@@ -63,6 +72,11 @@ export default {
   },
   directives: {
     'b-modal': VBModal,
+  },
+  computed: {
+    late_fee() {
+      return config.invoice.lateFee;
+    },
   },
   filters: {
     date: formatDate,

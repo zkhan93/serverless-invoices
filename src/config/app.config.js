@@ -65,5 +65,6 @@ export default {
     ],
     showTaxCols: false,
     showLogo: false,
+    lateFee: false,
   },
 };
