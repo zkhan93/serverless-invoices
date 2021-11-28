@@ -8,8 +8,9 @@
                     </div>
                     <div class="row mb-5">
                       <InvoiceCompanyDetails :invoice="invoice" :errors="errors" @update="updateProp"
-                                               class="col-12 text-center mb-2"/>
+                                               class="col-12 text-center"/>
                     </div>
+                    <hr/>
                     <div class="row">
                         <InvoiceClientDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                               class="col-6"/>
