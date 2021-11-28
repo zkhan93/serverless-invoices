@@ -69,3 +69,7 @@ npm run lint
 - invoicing solution
 - invoice maker
 - invoice generator 
+
+# TODOs
+- [ ] create invoice columns input UI from user
+- [ ] add a couple of different layouts
