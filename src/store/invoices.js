@@ -101,6 +101,7 @@ export default {
         from_website: 'website',
         from_email: 'contact_email',
         from_phone: 'contact_phone',
+        tnc: 'company_tnc',
       });
       const invoice = getInvoice(payload.invoiceId);
 
@@ -216,6 +217,7 @@ export default {
         from_website: team.website,
         from_email: team.contact_email,
         from_phone: team.contact_phone,
+        tnc: team.company_tnc,
       };
 
       return dispatch('updateInvoice', {

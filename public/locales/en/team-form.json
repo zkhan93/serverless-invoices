@@ -12,6 +12,7 @@
   "general": {
     "company_name": "Company name",
     "company_tagline": "Tagline",
+    "company_tnc": "Terms & Conditions",
     "contact_email": "Email",
     "contact_phone": "Phone",
     "website": "Website"

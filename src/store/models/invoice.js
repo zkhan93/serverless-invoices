@@ -47,6 +47,7 @@ export default class Invoice extends Model {
       total: this.attr(null), // Only used in lists.
       client_fields: this.hasMany(InvoiceClientField, 'invoice_id'),
       team_fields: this.hasMany(InvoiceTeamField, 'invoice_id'),
+      tnc: this.attr(''),
     };
   }
 

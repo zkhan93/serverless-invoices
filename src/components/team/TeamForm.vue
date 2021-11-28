@@ -34,6 +34,9 @@
                                   class="col-12"/>
                         <AppInput :value="team.website" @change="updateProp({ website: $event })"
                                   :label="$t('general.website')" field="website" :errors="errors" class="col-12"/>
+                        <AppInput :value="team.company_tnc" @change="updateProp({ company_tnc: $event })"
+                                  :label="$t('general.company_tnc')" field="company_tnc" :errors="errors"
+                                  class="col-12"/>
                     </div>
 
                     <TeamFields class="row" :team="team"/>

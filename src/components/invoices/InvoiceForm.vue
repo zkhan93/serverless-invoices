@@ -41,6 +41,10 @@
                         <InvoiceContactDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                                class="col-4 text-right"/>
                     </div>
+                    <div class="row">
+                      <InvoiceTermsAndConditions :invoice="invoice" :errors="errors" @update="updateProp"
+                                               class="col-12 text-center"/>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,6 +64,8 @@ import AppEditable from '@/components/form/AppEditable';
 import TeamLogo from '@/components/team/TeamLogo';
 import InvoiceRowsHeader from '@/components/invoices/InvoiceRowsHeader';
 import InvoiceAddRowBtn from '@/components/invoices/InvoiceAddRowBtn';
+import InvoiceTermsAndConditions from '@/components/invoices/InvoiceTermsAndConditions';
+
 
 export default {
   i18nOptions: { namespaces: 'invoice-form' },
@@ -75,6 +81,7 @@ export default {
     InvoiceRowsHeader,
     InvoiceClientDetails,
     AppEditable,
+    InvoiceTermsAndConditions,
   },
   computed: {
     ...mapState({
