@@ -4,7 +4,7 @@
           <template v-if="col.type === Date">
             <span class="editable__item" v-b-modal.modal_date>
               <template v-if="row[col.id]">
-              {{ row[col.id] | date('DD MMM YYYY', 'YYYY-MM-DD') }}
+              {{ row[col.id] | date('DD/MM/YYYY', 'YYYY-MM-DD') }}
               </template>
               <template v-else>
                 Select Date

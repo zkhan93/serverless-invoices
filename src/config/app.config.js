@@ -12,7 +12,7 @@ export default {
         name: 'Date',
         id: 'date',
         type: Date,
-        width: 1,
+        width: 2,
       },
       {
         id: 'ch_no',
@@ -24,7 +24,7 @@ export default {
         id: 'truck_no',
         name: 'Truck No',
         type: String,
-        width: 1,
+        width: 1.7,
       },
       {
         id: 'particulars',
@@ -42,7 +42,7 @@ export default {
         id: 'hsn_no',
         name: 'HSN No.',
         type: String,
-        width: 1,
+        width: 1.3,
       },
       {
         id: 'measurement',
@@ -54,13 +54,13 @@ export default {
         id: 'quantity',
         name: 'Qty',
         type: Number,
-        width: 1,
+        width: 1.5,
       },
       {
         id: 'price',
         name: 'Rate Per',
         type: Number,
-        width: 1,
+        width: 1.5,
       },
     ],
     showTaxCols: false,
