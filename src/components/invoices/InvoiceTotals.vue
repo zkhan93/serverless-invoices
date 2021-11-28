@@ -24,6 +24,7 @@
     </tfoot>
 </template>
 <script>
+import config from '@/config/app.config';
 import { mapGetters } from 'vuex';
 import AppEditable from '../form/AppEditable';
 import { formatDate } from '../../filters/date.filter';
@@ -44,7 +45,12 @@ export default {
       taxes: 'invoiceRows/taxes',
     }),
     colspan() {
-      return 4 + this.taxes.length;
+      let count = this.columnCount;
+      if (config.invoice.showTaxCols) count += this.taxes.length;
+      return count;
+    },
+    columnCount() {
+      return config.invoice.columns.length;
     },
   },
   methods: {

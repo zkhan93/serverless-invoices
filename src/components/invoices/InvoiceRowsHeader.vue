@@ -29,7 +29,7 @@ export default {
       return config.invoice.columns;
     },
     unit_width() {
-      let total_width = config.invoice.columns.reduce((total, col) => total + col.width, 0) + 1;
+      let total_width = config.invoice.columns.reduce((total, col) => total + col.width, 0) + 2;
       if (this.showTaxCols) total_width += 1;
       const unit_width = 100 / total_width;
       return unit_width;
