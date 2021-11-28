@@ -1,7 +1,14 @@
 {
   "enter_item": "Enter item",
-  "enter_quantity": "Enter quantity",
-  "enter_unit": "Enter unit",
-  "enter_price": "Enter price",
-  "enter_tax": "Enter tax"
+  "enter_quantity": "Quantity",
+  "enter_unit": "Unit",
+  "enter_price": "Rate",
+  "enter_tax": "Tax",
+  "enter_date": "Date",
+  "enter_ch_no": "CH No.",
+  "enter_truck_no": "Truck No.",
+  "enter_particulars": "Particulars",
+  "enter_trip": "Trip",
+  "enter_hsn_no": "HSN No.",
+  "enter_measurement": "Measurement"
 }

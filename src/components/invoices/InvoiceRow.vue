@@ -1,41 +1,26 @@
 <template>
     <tr>
-        <td>
-            <AppEditable :value="row.item"
-                         :errors="errors"
-                         :field="`rows.${index}.item`"
-                         :placeholder="$t('enter_item')"
-                         @change="updateProp({ item: $event })"/>
+        <td v-for="col in columns" :key="index + col.id">
+          <AppEditable :value="row[col.id]"
+                        :errors="errors"
+                        :field="`rows.${index}.${col.id}`"
+                        :placeholder="$t(`enter_${col.id}`)"
+                        @change="updateProp(col, $event)"
+                        style="display: flex"
+                        />
         </td>
-        <td>
-            <AppEditable :value="row.quantity"
-                         :errors="errors"
-                         :field="`rows.${index}.quantity`"
-                         :placeholder="$t('enter_quantity')"
-                         @change="updateProp({ quantity: $event })"/>
-        </td>
-        <td>
-            <AppEditable :value="row.unit"
-                         :errors="errors"
-                         :field="`rows.${index}.unit`"
-                         :placeholder="$t('enter_unit')"
-                         @change="updateProp({ unit: $event })"/>
-        </td>
-        <td>
-            <AppEditable :value="row.price | currency"
-                         :errors="errors"
-                         :field="`rows.${index}.price`"
-                         :placeholder="$t('enter_price')"
-                         @change="updateProp({ price: $event })"/>
-        </td>
-        <td v-for="(tax, taxIndex) in row.taxes" :title="tax.label">
-            <AppEditable v-if="tax.row_id"
-                         :value="tax.value | currency"
-                         :errors="errors"
-                         :field="`rows.${index}.taxes.${taxIndex}.value`"
-                         :placeholder="$t('enter_tax')"
-                         @change="updateTaxProp({ value: $event }, tax)"/>
-        </td>
+        <template v-if="showTaxCols">
+          <td v-for="(tax, taxIndex) in row.taxes" :title="tax.label" :key="`${index}_tax_${tax.label}`" >
+              <AppEditable v-if="tax.row_id"
+                          :value="tax.value | currency"
+                          :errors="errors"
+                          :field="`rows.${index}.taxes.${taxIndex}.value`"
+                          :placeholder="$t('enter_tax')"
+                          @change="updateTaxProp({ value: $event }, tax)"
+                          style="display: flex"
+                          />
+          </td>
+        </template>
         <td class="text-right position-relative">
             {{ (row.quantity * row.price) | currency }}
             <button class="btn btn-sm d-print-none invoice__row-control"
@@ -47,6 +32,7 @@
 </template>
 
 <script>
+import config from '@/config/app.config';
 import { formatCurrency } from '../../filters/currency.filter';
 import AppEditable from '../form/AppEditable';
 
@@ -60,8 +46,16 @@ export default {
   filters: {
     currency: formatCurrency,
   },
+  computed: {
+    columns() { return config.invoice.columns; },
+    showTaxCols() {
+      return config.invoice.showTaxCols;
+    },
+  },
   methods: {
-    updateProp(props) {
+    updateProp(col, event) {
+      const props = {};
+      props[col.id] = event;
       this.$store.dispatch('invoiceRows/updateInvoiceRow', {
         props,
         id: this.row.id,

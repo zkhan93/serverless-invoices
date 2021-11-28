@@ -7,6 +7,63 @@ export default {
   // api_url: wordpress.api_url,
   // api_nonce: wordpress.nonce,
   invoice: {
+    columns: [
+      {
+        name: 'Date',
+        id: 'date',
+        type: Date,
+        width: 1,
+      },
+      {
+        id: 'ch_no',
+        name: 'Ch. No',
+        type: String,
+        width: 1,
+      },
+      {
+        id: 'truck_no',
+        name: 'Truck No',
+        type: String,
+        width: 1,
+      },
+      {
+        id: 'particulars',
+        name: 'Particulars',
+        type: String,
+        width: 2,
+      },
+      {
+        id: 'trip',
+        name: 'Trip',
+        type: String,
+        width: 1,
+      },
+      {
+        id: 'hsn_no',
+        name: 'HSN No.',
+        type: String,
+        width: 1,
+      },
+      {
+        id: 'measurement',
+        name: 'Measurement',
+        type: String,
+        width: 2,
+      },
+      {
+        id: 'quantity',
+        name: 'Qty',
+        type: Number,
+        width: 1,
+      },
+      {
+        id: 'price',
+        name: 'Rate Per',
+        type: Number,
+        width: 1,
+      },
+    ],
+    showTaxCols: false,
     showLogo: false,
   },
 };
