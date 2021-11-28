@@ -43,7 +43,7 @@
                     </div>
                     <div class="row">
                       <InvoiceTermsAndConditions :invoice="invoice" :errors="errors" @update="updateProp"
-                                               class="col-12 text-center"/>
+                                               class="col-6 text-left"/>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="break-line">
+    <div class="small">
       {{$t('terms')}}:
         <AppEditable :value="invoice.tnc"
                      :errors="errors"
