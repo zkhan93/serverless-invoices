@@ -22,6 +22,7 @@ export default class Team extends Model {
     return {
       id: this.attr(() => uuidv4()),
       company_name: this.attr(''),
+      company_tagline: this.attr(''),
       company_address: this.attr(''),
       company_postal_code: this.attr(''),
       company_country: this.attr(''),

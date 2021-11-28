@@ -11,6 +11,7 @@
   },
   "general": {
     "company_name": "Company name",
+    "company_tagline": "Tagline",
     "contact_email": "Email",
     "contact_phone": "Phone",
     "website": "Website"

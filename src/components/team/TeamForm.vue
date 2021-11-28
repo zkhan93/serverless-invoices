@@ -23,6 +23,9 @@
                         <AppInput :value="team.company_name" @change="updateProp({ company_name: $event })"
                                   :label="$t('general.company_name')" field="company_name" :errors="errors"
                                   class="col-12"/>
+                        <AppInput :value="team.company_tagline" @change="updateProp({ company_tagline: $event })"
+                                  :label="$t('general.company_tagline')" field="company_tagline" :errors="errors"
+                                  class="col-12"/>
                         <AppInput :value="team.contact_email" @change="updateProp({ contact_email: $event })"
                                   :label="$t('general.contact_email')" field="contact_email" :errors="errors"
                                   class="col-12"/>

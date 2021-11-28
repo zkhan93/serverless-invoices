@@ -92,6 +92,7 @@ export default {
       const teamProps = pick(payload.props, {
         late_fee: 'invoice_late_fee',
         from_name: 'company_name',
+        from_tagline: 'company_tagline',
         from_address: 'company_address',
         from_postal_code: 'company_postal_code',
         from_city: 'company_city',
@@ -206,6 +207,7 @@ export default {
 
       const props = {
         from_name: team.company_name,
+        from_tagline: team.company_tagline,
         from_address: team.company_address,
         from_postal_code: team.company_postal_code,
         from_city: team.company_city,

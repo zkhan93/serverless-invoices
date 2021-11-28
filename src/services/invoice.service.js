@@ -52,6 +52,7 @@ class InvoiceService {
       client_email: 'Client\'s email',
       client_country: 'Country',
       from_name: 'Name',
+      from_tagline: 'Tagline',
       from_address: 'Address',
       from_postal_code: 'Postal code',
       from_country: 'Country',

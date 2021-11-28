@@ -20,6 +20,7 @@ export default class Invoice extends Model {
       late_fee: this.attr(''),
       currency: this.attr(''),
       from_name: this.attr(''),
+      from_tagline: this.attr(''),
       from_address: this.attr(''),
       from_postal_code: this.attr(''),
       from_city: this.attr(''),

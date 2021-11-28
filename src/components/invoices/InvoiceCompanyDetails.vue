@@ -8,6 +8,12 @@
                          @change="updateProp({ from_name: $event })"/>
             <i class="material-icons md-18 ml-2 pointer d-print-none" @click="editTeam">edit</i>
         </strong>
+        <AppEditable :value="invoice.from_tagline"
+                         :errors="errors"
+                         field="from_tagline"
+                         class="break-line"
+                         :placeholder="$t('your_tagline')"
+                         @change="updateProp({ from_tagline: $event })"/>
         <AppEditable :value="invoice.from_address"
                      suffix=", "
                      :placeholder="$t('address')"
