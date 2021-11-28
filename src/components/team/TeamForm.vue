@@ -34,8 +34,11 @@
                                   class="col-12"/>
                         <AppInput :value="team.website" @change="updateProp({ website: $event })"
                                   :label="$t('general.website')" field="website" :errors="errors" class="col-12"/>
-                        <AppInput :value="team.company_tnc" @change="updateProp({ company_tnc: $event })"
+                        <AppTextarea :value="team.company_tnc" @change="updateProp({ company_tnc: $event })"
                                   :label="$t('general.company_tnc')" field="company_tnc" :errors="errors"
+                                  class="col-12"/>
+                        <AppTextarea :value="team.company_declaration" @change="updateProp({ company_declaration: $event })"
+                                  :label="$t('general.company_declaration')" field="company_declaration" :errors="errors"
                                   class="col-12"/>
                     </div>
 
@@ -95,6 +98,7 @@ import {
 } from 'bootstrap-vue';
 import NotificationService from '@/services/notification.service';
 import AppInput from '@/components/form/AppInput';
+import AppTextarea from '@/components/form/AppTextarea';
 import Errors from '@/utils/errors';
 import TeamFields from '@/components/team/TeamFields';
 import TeamLogo from '@/components/team/TeamLogo';
@@ -107,6 +111,7 @@ export default {
     TeamFields,
     TeamTaxes,
     AppInput,
+    AppTextarea,
     BTab,
     BTabs,
   },

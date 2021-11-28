@@ -29,6 +29,7 @@ export default class Team extends Model {
       company_county: this.attr(''),
       company_city: this.attr(''),
       company_tnc: this.attr(''),
+      company_declaration: this.attr(''),
       website: this.attr(''),
       contact_email: this.attr(''),
       contact_phone: this.attr(''),

@@ -35,15 +35,17 @@
                         </table>
                     </div>
                     <hr>
-                    <div class="row">
+                    <div class="row mb-4">
                         <InvoiceBankDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                             class="col-8"/>
                         <InvoiceContactDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                                class="col-4 text-right"/>
                     </div>
-                    <div class="row">
+                    <div class="row ">
                       <InvoiceTermsAndConditions :invoice="invoice" :errors="errors" @update="updateProp"
                                                class="col-6 text-left"/>
+                      <InvoiceDeclaration :invoice="invoice" :errors="errors" @update="updateProp"
+                                               class="col-6 text-right"/>
                     </div>
                 </div>
             </div>
@@ -65,7 +67,7 @@ import TeamLogo from '@/components/team/TeamLogo';
 import InvoiceRowsHeader from '@/components/invoices/InvoiceRowsHeader';
 import InvoiceAddRowBtn from '@/components/invoices/InvoiceAddRowBtn';
 import InvoiceTermsAndConditions from '@/components/invoices/InvoiceTermsAndConditions';
-
+import InvoiceDeclaration from '@/components/invoices/InvoiceDeclaration';
 
 export default {
   i18nOptions: { namespaces: 'invoice-form' },
@@ -82,6 +84,7 @@ export default {
     InvoiceClientDetails,
     AppEditable,
     InvoiceTermsAndConditions,
+    InvoiceDeclaration,
   },
   computed: {
     ...mapState({

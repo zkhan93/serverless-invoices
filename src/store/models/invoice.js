@@ -48,6 +48,7 @@ export default class Invoice extends Model {
       client_fields: this.hasMany(InvoiceClientField, 'invoice_id'),
       team_fields: this.hasMany(InvoiceTeamField, 'invoice_id'),
       tnc: this.attr(''),
+      declaration: this.attr(''),
     };
   }
 
