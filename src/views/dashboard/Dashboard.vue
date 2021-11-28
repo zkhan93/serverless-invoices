@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="container app__content">
+        <div class="container-fluid app__content">
             <div class="row justify-content-center">
                 <div class="d-flex flex-column justify-content-between col-12 min-vh-100 pt-5 pb-2">
                     <transition name="fade" mode="out-in">
