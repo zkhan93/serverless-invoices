@@ -6,6 +6,7 @@
                     <div class="row mb-5" v-if="showLogo">
                         <TeamLogo class="col-12 text-center" :errors="errors"/>
                     </div>
+                    <h4 class="text-center">{{$t('tax_invoice')}}</h4>
                     <div class="row mb-5">
                       <InvoiceCompanyDetails :invoice="invoice" :errors="errors" @update="updateProp"
                                                class="col-12 text-center"/>
@@ -37,9 +38,13 @@
                     <hr>
                     <div class="row mb-4">
                         <InvoiceBankDetails :invoice="invoice" :errors="errors" @update="updateProp"
-                                            class="col-8"/>
-                        <InvoiceContactDetails :invoice="invoice" :errors="errors" @update="updateProp"
-                                               class="col-4 text-right"/>
+                                            class="col-4"/>
+                        <InvoiceJurisdiction :invoice="invoice" :errors="errors" @update="updateProp" class="col-4 text-center"/>
+                        <InvoiceProprietor :invoice="invoice" :errors="errors" @update="updateProp" class="col-4 text-right"/>
+                    </div>
+                    <div class="row mb-4">
+                    <InvoiceContactDetails :invoice="invoice" :errors="errors" @update="updateProp"
+                                               class="text-right"/>
                     </div>
                     <div class="row ">
                       <InvoiceTermsAndConditions :invoice="invoice" :errors="errors" @update="updateProp"
@@ -68,6 +73,8 @@ import InvoiceRowsHeader from '@/components/invoices/InvoiceRowsHeader';
 import InvoiceAddRowBtn from '@/components/invoices/InvoiceAddRowBtn';
 import InvoiceTermsAndConditions from '@/components/invoices/InvoiceTermsAndConditions';
 import InvoiceDeclaration from '@/components/invoices/InvoiceDeclaration';
+import InvoiceJurisdiction from '@/components/invoices/InvoiceJurisdiction';
+import InvoiceProprietor from '@/components/invoices/InvoiceProprietor';
 
 export default {
   i18nOptions: { namespaces: 'invoice-form' },
@@ -85,6 +92,8 @@ export default {
     AppEditable,
     InvoiceTermsAndConditions,
     InvoiceDeclaration,
+    InvoiceJurisdiction,
+    InvoiceProprietor,
   },
   computed: {
     ...mapState({
