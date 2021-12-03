@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "9a73a5134ee5639bc2f3",
+    "revision": "5cb0582e03a51e8562a6",
     "url": "/css/app.da0c04ae.css"
   },
   {
-    "revision": "9a73a5134ee5639bc2f3",
+    "revision": "5cb0582e03a51e8562a6",
     "url": "/css/app.da0c04ae.css.map"
   },
   {
@@ -32,11 +32,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/dashboard~invoice.96a655cf.css.map"
   },
   {
-    "revision": "9ca6c2d29307257ec53f",
+    "revision": "14a06e9a41ee37bf2e8a",
     "url": "/css/invoice.857fc4d1.css"
   },
   {
-    "revision": "9ca6c2d29307257ec53f",
+    "revision": "14a06e9a41ee37bf2e8a",
     "url": "/css/invoice.857fc4d1.css.map"
   },
   {
@@ -88,16 +88,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "97d79ca2e7532d88ec9c8f31e08b0ad2",
+    "revision": "118df38b55d0430e6be2c98d30082afd",
     "url": "/index.html"
   },
   {
-    "revision": "9a73a5134ee5639bc2f3",
-    "url": "/js/app.9da9d4ac.js"
+    "revision": "5cb0582e03a51e8562a6",
+    "url": "/js/app.7c526c38.js"
   },
   {
-    "revision": "9a73a5134ee5639bc2f3",
-    "url": "/js/app.9da9d4ac.js.map"
+    "revision": "5cb0582e03a51e8562a6",
+    "url": "/js/app.7c526c38.js.map"
   },
   {
     "revision": "d1831d148c2be08c1eae",
@@ -140,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/dashboard~invoice~invoices.0b5b5bdc.js.map"
   },
   {
-    "revision": "9ca6c2d29307257ec53f",
-    "url": "/js/invoice.4f44de91.js"
+    "revision": "14a06e9a41ee37bf2e8a",
+    "url": "/js/invoice.63767b35.js"
   },
   {
-    "revision": "9ca6c2d29307257ec53f",
-    "url": "/js/invoice.4f44de91.js.map"
+    "revision": "14a06e9a41ee37bf2e8a",
+    "url": "/js/invoice.63767b35.js.map"
   },
   {
     "revision": "27fd7bf9fa9794fefc00",
@@ -312,12 +312,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/invoice-controls.json"
   },
   {
-    "revision": "db5368789182a97cdc6a4f578502f79d",
+    "revision": "39bf95736759dd05af32658937fd5a51",
     "url": "/locales/en/invoice-form.json"
   },
   {
     "revision": "b53ecea0e3b51a84990280befc11ab61",
     "url": "/locales/en/invoice-header.json"
+  },
+  {
+    "revision": "587dcfd62cf86a6d9c525b03adc87573",
+    "url": "/locales/en/invoice-jurisdiction.json"
+  },
+  {
+    "revision": "20bf8f893439e963be43d83dd11e93bf",
+    "url": "/locales/en/invoice-proprietor.json"
   },
   {
     "revision": "250a188caadfaa0743733098780aeef5",
