@@ -21,11 +21,17 @@
         </th>
         <th class="text-nowrap">{{ invoice.total | currency }}</th>
     </tr>
+    <tr>
+      <td :colspan="colspan + 2" class="text-center">
+          <div class="text-capitalize"> <span class="font-weight-bold mr-2">{{ $t("rupees") }}:</span> <u>{{toWords(invoice.total)}} Only</u></div>
+      </td>
+    </tr>
     </tfoot>
 </template>
 <script>
 import config from '@/config/app.config';
 import { mapGetters } from 'vuex';
+import { toWords } from 'number-to-words';
 import AppEditable from '../form/AppEditable';
 import { formatDate } from '../../filters/date.filter';
 import { formatCurrency } from '../../filters/currency.filter';
@@ -54,6 +60,7 @@ export default {
     },
   },
   methods: {
+    toWords: toWords,
     updateProp(props) {
       this.$emit('update', props);
     },
