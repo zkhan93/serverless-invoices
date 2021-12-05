@@ -8,11 +8,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "d1436a396db66cfdf8f3",
+    "revision": "4a450a3756d3307e490f",
     "url": "/css/app.da0c04ae.css"
   },
   {
-    "revision": "d1436a396db66cfdf8f3",
+    "revision": "4a450a3756d3307e490f",
     "url": "/css/app.da0c04ae.css.map"
   },
   {
@@ -24,19 +24,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-vendors.a75cd829.css.map"
   },
   {
-    "revision": "3fa09b9ca5ebe4ea4d86",
+    "revision": "15cae190c33549533391",
     "url": "/css/dashboard~invoice.96a655cf.css"
   },
   {
-    "revision": "3fa09b9ca5ebe4ea4d86",
+    "revision": "15cae190c33549533391",
     "url": "/css/dashboard~invoice.96a655cf.css.map"
   },
   {
-    "revision": "d0d2550863c68d028eb0",
+    "revision": "13ee4209e4b6c58dda1d",
     "url": "/css/invoice.857fc4d1.css"
   },
   {
-    "revision": "d0d2550863c68d028eb0",
+    "revision": "13ee4209e4b6c58dda1d",
     "url": "/css/invoice.857fc4d1.css.map"
   },
   {
@@ -88,16 +88,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "3e931a580d383993840f4d555c8a51de",
+    "revision": "3aac52becc9239b335cb582bfcba19d0",
     "url": "/index.html"
   },
   {
-    "revision": "d1436a396db66cfdf8f3",
-    "url": "/js/app.116fd1fe.js"
+    "revision": "4a450a3756d3307e490f",
+    "url": "/js/app.168b9992.js"
   },
   {
-    "revision": "d1436a396db66cfdf8f3",
-    "url": "/js/app.116fd1fe.js.map"
+    "revision": "4a450a3756d3307e490f",
+    "url": "/js/app.168b9992.js.map"
   },
   {
     "revision": "d1831d148c2be08c1eae",
@@ -108,20 +108,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-vendors.69119ad1.js.map"
   },
   {
-    "revision": "a106f65d5009b320f8e4",
-    "url": "/js/dashboard.ae8fdca1.js"
+    "revision": "838566683a9cd923476d",
+    "url": "/js/dashboard.12966831.js"
   },
   {
-    "revision": "a106f65d5009b320f8e4",
-    "url": "/js/dashboard.ae8fdca1.js.map"
+    "revision": "838566683a9cd923476d",
+    "url": "/js/dashboard.12966831.js.map"
   },
   {
-    "revision": "3fa09b9ca5ebe4ea4d86",
-    "url": "/js/dashboard~invoice.dd61e10f.js"
+    "revision": "15cae190c33549533391",
+    "url": "/js/dashboard~invoice.e6a75781.js"
   },
   {
-    "revision": "3fa09b9ca5ebe4ea4d86",
-    "url": "/js/dashboard~invoice.dd61e10f.js.map"
+    "revision": "15cae190c33549533391",
+    "url": "/js/dashboard~invoice.e6a75781.js.map"
   },
   {
     "revision": "34dce11cf4f4ae3967cf",
@@ -140,20 +140,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/dashboard~invoice~invoices.0b5b5bdc.js.map"
   },
   {
-    "revision": "d0d2550863c68d028eb0",
-    "url": "/js/invoice.ed944911.js"
+    "revision": "13ee4209e4b6c58dda1d",
+    "url": "/js/invoice.0bbc5b1a.js"
   },
   {
-    "revision": "d0d2550863c68d028eb0",
-    "url": "/js/invoice.ed944911.js.map"
+    "revision": "13ee4209e4b6c58dda1d",
+    "url": "/js/invoice.0bbc5b1a.js.map"
   },
   {
-    "revision": "27fd7bf9fa9794fefc00",
-    "url": "/js/invoices.9c2f9dc0.js"
+    "revision": "dbf32346db4a8cb4000b",
+    "url": "/js/invoices.0de89bcb.js"
   },
   {
-    "revision": "27fd7bf9fa9794fefc00",
-    "url": "/js/invoices.9c2f9dc0.js.map"
+    "revision": "dbf32346db4a8cb4000b",
+    "url": "/js/invoices.0de89bcb.js.map"
   },
   {
     "revision": "b86913c193e2b4941c24ed052dd6b130",
@@ -340,7 +340,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/locales/en/invoice-terms-and-conditions.json"
   },
   {
-    "revision": "550ff06c98b1450f06c51cdd01a23777",
+    "revision": "ae1285d82feded66c6e8109ced652f8b",
     "url": "/locales/en/invoice-totals.json"
   },
   {
