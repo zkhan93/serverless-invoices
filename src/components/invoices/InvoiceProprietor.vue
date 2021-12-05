@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="font-weight-bold mb-5">{{$t("for")}} {{invoice.from_name}}</div>
-        <div>{{$('proprietor')}}</div>
+        <div class="font-weight-bold mb-5">{{ $t("for") }} {{invoice.from_name}}</div>
+        <div>{{ $t('proprietor') }}</div>
     </div>
 </template>
 <script>
